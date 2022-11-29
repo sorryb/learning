@@ -1,6 +1,41 @@
-# Getting Started with Create React App
+# Getting Started to learn React JS - Communication between Components
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+	
+### `npx create-react-app learning 	`
+	
+	
+# Clear template to use project for learning
+
+Clear src folder - delete all files ,only what is inside
+Clear public folder - delete all files ,only what is inside
+
+Add index.js inside src
+Add a index.html inside public
+
+For index.html put inside only this:
+
+```jscript
+	<div id = "root"></div>
+```
+
+For index.js put inside  this startup javaScript code:
+
+```jscript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+```
+at the beggining of the file and 
+
+```jscript
+const element = <Calculator/>
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(element);
+```
+
+at the end. And in between add the Calculator component(which act like a container for the others two)
 
 ## Available Scripts
 
